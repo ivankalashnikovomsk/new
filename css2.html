@@ -1,0 +1,115 @@
+<html>
+<head>
+<style>
+
+.tizer{
+    border: 1px solid #c4c4c4; /* Рамка всего блока. Стоит ширина 1px, solid - непрерывная, #c4c4c4 - это ее цвет. Если рамка не нужна - просто удалите эту строку */
+    margin: 10px 0 10px 0; /* Внешний отступ всего блока с тизерами от контента страницы. Стоит сверху и снизу по 10px, а слева и справа 0px */
+    padding: 10px 5px 5px 5px; /* Внутренний отступ внутри блока. Чтобы не сливались с краями рамки тизеры. Соответственно: сверху 10 px, справа 5px, снизу 5px, слева 5px */
+    text-align: center; /* Выравнивание текста во всем блоке по центру */
+	height: auto;
+	width: 600px;
+	position: absolute;
+	top: 0px;
+	right: 0;
+	
+}
+
+.gallery {
+
+	text-align: center;
+  margin: 5px;
+  border: 1px solid #ccc;
+  padding: 1px 1px 1px 1px;
+  display: inline-block;
+  width: auto;
+}
+
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+.gallery img {
+text-align: center;
+	padding: 5px
+	width: 150px;
+	height: 150px;
+	margin: 0 auto auto;
+	outline: 1px solid #666;
+	 
+  
+}
+
+.top {
+font-size: 30px;
+	height: auto;
+	width: auto;
+  display: inline-block;
+  }
+
+ul {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}  
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+.selbutton
+{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.selbutton:hover {
+  background-color : yellow;
+}
+  
+</style>
+</head>
+<body>
+
+<div class="tizer">
+<div class="top">
+<b> Продукция наших партнеров: </b>
+<ul>
+  <li><button class="selbutton"><</button></li>
+  <li><button class="selbutton">></button></li>
+</ul>
+<hr>
+</div>
+<br>
+<div class="gallery">
+    <img src="1.jpg" alt="Cinque Terre" width="150" height="150">
+</div>
+
+<div class="gallery">
+    <img src="2.jpg" alt="Forest" width="150" height="150">
+</div>
+</div>
+
+
+
+</body>
+</html>
